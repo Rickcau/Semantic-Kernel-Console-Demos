@@ -13,7 +13,7 @@ In this example, I am not streaming the Chat Completion so you have to wait for 
 This is the same example as the above, but I have implementing Streaming logic, which results in a better Chat experience, and would be the recommended approach for a production solution.
 
 ## Notes
-This concept could be used with any GraphQL endpoint.  I will explore with other GraphQL endpoints when I have time, but the UniSwap V3 GraphQL endpoint is very well know in the Cryto space.
+This concept could be used with any GraphQL endpoint.  I will explore with other GraphQL endpoints when I have time, but the UniSwap V3 GraphQL endpoint is very well know in the Crypto space.
 
 
 ## Requirements for this example
