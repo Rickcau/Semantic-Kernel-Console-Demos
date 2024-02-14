@@ -12,6 +12,9 @@ In this example, I am not streaming the Chat Completion so you have to wait for 
 ## Console-SK-DeFi-Assistant-Streaming
 This is the same example as the above, but I have implementing Streaming logic, which results in a better Chat experience, and would be the recommended approach for a production solution.
 
+## Console-SK-Multiple-Function-Calling-Assistant
+In this example, I demo how you can nest multiple Native Functions and have the Kernel automatically call each one based on the prompt.  If you have a use case that has very specific tasks that need to be invoked depending on the scenario, this is a super easy to understand example that will get you headed in the right direction.
+
 ## Notes
 This concept could be used with any GraphQL endpoint.  I will explore with other GraphQL endpoints when I have time, but the UniSwap V3 GraphQL endpoint is very well know in the Crypto space.
 
