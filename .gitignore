@@ -362,3 +362,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Console-SK-DeFi-Assistant-Streaming/App.config
