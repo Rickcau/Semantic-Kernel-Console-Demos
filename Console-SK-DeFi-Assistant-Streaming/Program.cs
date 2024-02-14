@@ -7,7 +7,7 @@ using System.Net;
 using Azure.Core;
 using System;
 
-// In this example I demonstrate stream of the Chat Completion Result
+// In this example I demonstrate streaming of the Chat Completion Result
 
 Console.WriteLine("This example makes use of an SK Plugin that calls an endpoint and use Chat History in a very simple Assistant Scenario");
 Console.WriteLine("Since this example is using Plugin that Queries the Uniswap V3 Subgraph you need to ask questions that make sense to be used in a query.");
