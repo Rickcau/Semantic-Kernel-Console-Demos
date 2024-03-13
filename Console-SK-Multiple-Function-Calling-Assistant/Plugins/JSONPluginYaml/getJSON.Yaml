@@ -9,7 +9,7 @@ template: |
 template_format: semantic-kernel
 input_variables:
   - name: request
-    description: The filter and properts for the AI to use to construct the JSON 
+    description: The filter and properities for the AI to use to construct the JSON 
     is_required: true
 output_variable:
  description: The generated JSON structure

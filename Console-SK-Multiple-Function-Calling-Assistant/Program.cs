@@ -16,6 +16,8 @@ Console.WriteLine("Please turn the light on");
 Console.WriteLine("2+2");
 Console.WriteLine("2x2");
 Console.WriteLine("Is the light on?");
+Console.WriteLine("Give me the risk indicators for HR version 2023");
+
 
 var pluginsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Plugins", "JSONPluginYaml");
 var getJSONYaml = File.ReadAllText($"{pluginsDirectory}\\getJSON.yaml"); 
@@ -36,11 +38,14 @@ if (openAiDeployment != null && openAiUri != null && openAiApiKey != null)
 }
 builder.Plugins.AddFromType<MathPlugin>();
 builder.Plugins.AddFromType<LightOnPlugin>();
-builder.Plugins.AddFromFunctions(writeBusinessEmail, new KernelFunction[] { KernelFunctionYaml.FromPromptYaml("yaml") });
+// builder.Plugins.AddFromFunctions(writeBusinessEmail, new KernelFunction[] { KernelFunctionYaml.FromPromptYaml("yaml") });
 
 
 
 var kernel = builder.Build();
+var jsonoutputplugin = new JSONOutputPlugin(kernel);
+kernel.Plugins.AddFromObject(jsonoutputplugin);
+
 
 ChatHistory history = [];
 
