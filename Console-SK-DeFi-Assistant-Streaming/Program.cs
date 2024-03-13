@@ -13,6 +13,7 @@ Console.WriteLine("This example makes use of an SK Plugin that calls an endpoint
 Console.WriteLine("Since this example is using Plugin that Queries the Uniswap V3 Subgraph you need to ask questions that make sense to be used in a query.");
 Console.WriteLine("Example 1: top 10 active pools");
 Console.WriteLine("Example 2: Retrieve 10 most liquid pools");
+Console.WriteLine("Who is the 25th president");
 Console.WriteLine("{ pools(orderBy: volumeUSD, orderDirection: desc, first: 10) { id volumeUSD } }");
 Console.WriteLine("Type: Exit to exit the chat");
 Console.WriteLine("Streaming is used!");
@@ -31,13 +32,16 @@ if (openAiDeployment != null && openAiUri != null && openAiApiKey != null)
     endpoint: openAiUri,
     apiKey: openAiApiKey);
 }
+
 builder.Plugins.AddFromType<UniswapV3SubgraphPlugin>();
+builder.Plugins.AddFromType<CheckHistoryPlugin>();
 
 var kernel = builder.Build();
 
 ChatHistory history = [];
 
 var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
+
 
 while (true)
 {

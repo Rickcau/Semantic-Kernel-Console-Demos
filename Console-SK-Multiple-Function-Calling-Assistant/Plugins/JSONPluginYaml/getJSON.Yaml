@@ -1,0 +1,15 @@
+﻿name: getJSON
+description: A function that generates JSON with the properties set to what the user is asking for.
+template: |
+  <message role="system">Instructions: What is the filter criteria of this request?
+  Do not explain the reasoning, just reply back with the filter criteria in the form of JSON using the following as properties; reportPatientType, ahrqVersion and riskAdjustementModel and set one of these properties to the filter criteria. If you are unsure, reply with unsure.
+  </message>
+  <message role="user">{{request}}</message>
+  <message role="system">JSON:</message>
+template_format: semantic-kernel
+input_variables:
+  - name: request
+    description: The filter and properts for the AI to use to construct the JSON 
+    is_required: true
+output_variable:
+ description: The generated JSON structure

@@ -17,6 +17,8 @@ Console.WriteLine("Streaming is NOT used!");
 
 var builder = Kernel.CreateBuilder();
 
+
+
 var openAiDeployment = ConfigurationManager.AppSettings.Get("AzureOpenAIModel");
 var openAiUri = ConfigurationManager.AppSettings.Get("AzureOpenAIEndpoint");
 var openAiApiKey = ConfigurationManager.AppSettings.Get("AzureOpenAIKey");

@@ -17,6 +17,9 @@ Console.WriteLine("2+2");
 Console.WriteLine("2x2");
 Console.WriteLine("Is the light on?");
 
+var pluginsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "Plugins", "JSONPluginYaml");
+var getJSONYaml = File.ReadAllText($"{pluginsDirectory}\\getJSON.yaml"); 
+var writeBusinessEmail = File.ReadAllText($"{pluginsDirectory}\\WriteBusinessMail.yaml");
 
 var builder = Kernel.CreateBuilder();
 
@@ -33,12 +36,16 @@ if (openAiDeployment != null && openAiUri != null && openAiApiKey != null)
 }
 builder.Plugins.AddFromType<MathPlugin>();
 builder.Plugins.AddFromType<LightOnPlugin>();
+builder.Plugins.AddFromFunctions(writeBusinessEmail, new KernelFunction[] { KernelFunctionYaml.FromPromptYaml("yaml") });
+
+
 
 var kernel = builder.Build();
 
 ChatHistory history = [];
 
 var chatCompletionService = kernel.GetRequiredService<IChatCompletionService>();
+
 
 while (true)
 {
