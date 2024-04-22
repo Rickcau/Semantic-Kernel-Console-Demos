@@ -15,7 +15,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console-SK-Multiple-Function-Calling-Assistant", "Console-SK-Multiple-Function-Calling-Assistant\Console-SK-Multiple-Function-Calling-Assistant.csproj", "{2B4C34B6-05AC-4893-A605-B591E08184C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console-SK-CustomPlugin-Dynamic-Descriptions", "Console-SK-CustomPlugin-Dynamic-Descriptions\Console-SK-CustomPlugin-Dynamic-Descriptions.csproj", "{34404462-C8C1-4CB3-8941-C19D50C33A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console-SK-CustomPlugin-Dynamic-Descriptions", "Console-SK-CustomPlugin-Dynamic-Descriptions\Console-SK-CustomPlugin-Dynamic-Descriptions.csproj", "{34404462-C8C1-4CB3-8941-C19D50C33A5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console-SK-Experimental.Agents", "Console-SK-Experimental.Agents\Console-SK-Experimental.Agents.csproj", "{089B6E0F-A5F7-4761-8946-49EECBDA3CC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp-SK-Speech-To-Text", "ConsoleApp-SK-Speech-To-Text\ConsoleApp-SK-Speech-To-Text.csproj", "{1D444D04-FCA0-4300-A14F-72742BE49166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp-SK-Planner", "ConsoleApp-SK-Planner\ConsoleApp-SK-Planner.csproj", "{7C2C7D74-8108-4C41-9810-6C5F1414619D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{34404462-C8C1-4CB3-8941-C19D50C33A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34404462-C8C1-4CB3-8941-C19D50C33A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34404462-C8C1-4CB3-8941-C19D50C33A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{089B6E0F-A5F7-4761-8946-49EECBDA3CC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{089B6E0F-A5F7-4761-8946-49EECBDA3CC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{089B6E0F-A5F7-4761-8946-49EECBDA3CC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{089B6E0F-A5F7-4761-8946-49EECBDA3CC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D444D04-FCA0-4300-A14F-72742BE49166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D444D04-FCA0-4300-A14F-72742BE49166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D444D04-FCA0-4300-A14F-72742BE49166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D444D04-FCA0-4300-A14F-72742BE49166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C2C7D74-8108-4C41-9810-6C5F1414619D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C2C7D74-8108-4C41-9810-6C5F1414619D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C2C7D74-8108-4C41-9810-6C5F1414619D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C2C7D74-8108-4C41-9810-6C5F1414619D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

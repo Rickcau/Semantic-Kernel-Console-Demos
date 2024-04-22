@@ -17,8 +17,6 @@ Console.WriteLine("Streaming is NOT used!");
 
 var builder = Kernel.CreateBuilder();
 
-
-
 var openAiDeployment = ConfigurationManager.AppSettings.Get("AzureOpenAIModel");
 var openAiUri = ConfigurationManager.AppSettings.Get("AzureOpenAIEndpoint");
 var openAiApiKey = ConfigurationManager.AppSettings.Get("AzureOpenAIKey");
@@ -29,6 +27,7 @@ if (openAiDeployment != null && openAiUri != null && openAiApiKey != null)
     deploymentName: openAiDeployment,
     endpoint: openAiUri,
     apiKey: openAiApiKey);
+    
 }
 builder.Plugins.AddFromType<UniswapV3SubgraphPlugin>();
 
