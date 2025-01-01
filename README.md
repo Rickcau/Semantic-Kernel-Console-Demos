@@ -3,9 +3,7 @@
 In this Solution / Repo I have several Console Apps that I demo various SK examples.  I often leverage console apps to learn new concepts and to play with different patterns as it's a quick way to get up an running.  I hope you find this repo useful.
 
 ## LICENSE
-The MIT License that accommpanies this repo applies to all the solutions included in this repo.  
-
-[LICENSE](./LICENSE)
+The [MIT License](./LICENSE) applies to all the solutions / projects / examples included in this repository.  
 
 ## Console-SK-DeFi-Assistant
 In this example, I create a custom SK plugin for the Uniswap V3 Subgraph. I also make use of ToolCallBehavior.AutoInvokeKernelFunctions setting so the Kernel will automatically determine if there is a Native Function it needs to invoke.  
